@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="11098번 첼시를 도와줘!.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1408번 24.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="1920번 수 찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1977번 완전제곱수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11098번 첼시를 도와줘!.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
