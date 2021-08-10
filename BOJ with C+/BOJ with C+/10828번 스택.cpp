@@ -11,11 +11,11 @@ void push(int x) {
 }
 
 int pop() {
-	if (s == 1)
+	if (s == 0)
 		return -1;
-	else
-		return stack[s - 1];
-		s--;
+	int t = stack[s - 1];
+	s--;
+	return t;
 }
 
 int size(){
