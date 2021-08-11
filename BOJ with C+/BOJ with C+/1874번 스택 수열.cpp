@@ -3,41 +3,38 @@
 
 using namespace std;
 
-int main(void) {
-	int n;
-	cin >> n;
-	stack<int> st;
-	int m = 0;
-	string ans;
+int main(void)
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0); cout.tie(0);
 
-	while (n--) {
-		int x;
-		cin >> x;
-		if (x > m) {
-			while (x > m) {
-				st.push(++m);
-				ans += '+';
+	int n, num, cnt = 1;
+	stack<int> s;
+	string result = "";
+	cin >> n;
+
+	for (int i = 0; i < n; i++) {
+		cin >> num;
+		if (num >= cnt) {
+			while (num + 1 != cnt) {
+				s.push(cnt++);
+				result += "+\n";
 			}
-			st.pop();
-			ans += '-';
+			s.pop();
+			result += "-\n";
 		}
-		else{
-			bool found = false;
-			if (!st.empty()) {
-				if (x == st.top()) {
-					found = true;
-				}
-				st.pop();
-				ans += '-';
+		else {
+			if (s.top() == num) {
+				s.pop();
+				result += "-\n";
 			}
-			if (!found) {
-				cout << "NO" << endl;
-				return 0;
+			else {
+				result = "NO";
+				break;
 			}
 		}
 	}
-	for (auto x : ans) {
-		cout << x << endl;
-	}
+	cout << result;
+
 	return 0;
 }
