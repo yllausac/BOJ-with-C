@@ -30,5 +30,8 @@
     <ClCompile Include="10828번 스택.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9012번 괄호.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
