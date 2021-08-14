@@ -51,5 +51,8 @@
     <ClCompile Include="5397번 키로거.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1991번 트리 순회.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
