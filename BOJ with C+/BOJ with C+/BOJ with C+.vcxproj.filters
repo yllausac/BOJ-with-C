@@ -60,5 +60,8 @@
     <ClCompile Include="11437번 LCA.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3986번 좋은 단어.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
